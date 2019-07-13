@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-4 blg-post" style="padding: 0;">
+  <div class="col-lg-4 blg-post">
     <div class="col-lg-12">
       <div class="blg-post-image">
         <a href="#">
@@ -7,12 +7,12 @@
         </a>
       </div>
       <div class="blg-post-text">
-        <span>Ocak 29, 2018</span>
+        <span>{{date}}</span>
         <a href="#">
-          <h1>Deneme Başlık</h1>
+          <h1>{{ title }}</h1>
         </a>
-        <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler omış,</p>
-        <a href="#">Category</a>
+        <p>{{ content }}</p>
+        <a href="#">{{category}}</a>
       </div>
     </div>
   </div>
@@ -20,6 +20,24 @@
 
 <script>
 export default {
-  name: 'PostItem'
+  name: 'PostItem',
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    content: {
+      type: String,
+      required: true
+    },
+    category: {
+      type: String,
+      required: true
+    },
+    date: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>

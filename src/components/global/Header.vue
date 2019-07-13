@@ -8,15 +8,17 @@
           </a>
         </div>
         <div class="blg-top-search">
-          <span>Search</span>
-          <span class="oi oi-magnifying-glass"></span>
+          <div class="top-search-box">
+            <input type="text" placeholder="Search..." />
+            <span class="oi oi-magnifying-glass"></span>
+          </div>
         </div>
       </div>
     </nav>
 
     <Navbar />
 
-    <Slider/>
+    <Slider />
   </div>
 </template>
 
@@ -32,3 +34,22 @@ export default {
   }
 }
 </script>
+
+<style>
+.top-search-box {
+  border-bottom: 1px solid #aaa;
+}
+.top-search-box input{
+  border:none;
+  background-color: transparent;
+  color:#aaa;
+}
+.top-search-box input:focus{
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.top-search-box input::placeholder {
+  color: #aaa;
+}
+</style>

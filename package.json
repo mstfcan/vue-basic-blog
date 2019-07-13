@@ -11,6 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "css-loader": "^3.0.0",
     "jquery": "^3.4.1",
@@ -18,7 +19,8 @@
     "popper.js": "^1.15.0",
     "style-loader": "^0.23.1",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vueisotope": "^3.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
