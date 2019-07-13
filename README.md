@@ -1,1 +1,6 @@
-# vue-basic-blog
+Basic blog template.
+# Usage
+```
+npm install
+npm start
+```
